@@ -1,0 +1,283 @@
+/*-- HTML5 Boilerplate. -----------------------------------------------------*/
+
+@import "../../vendor/bower/html5-boilerplate/css/normalize.css";
+@import "../../vendor/bower/html5-boilerplate/css/main.css";
+
+/*-- Application stylesheets. -----------------------------------------------*/
+
+.slider-container{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.horizontal-center{
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+}
+
+.header{
+	height:20%;
+	background: #a849a3; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E4NDlhMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2M4NWVjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNTcwZTciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #a849a3 0%, #c85ec7 53%, #e570e7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a849a3), color-stop(53%,#c85ec7), color-stop(100%,#e570e7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a849a3 0%,#c85ec7 53%,#e570e7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a849a3 0%,#c85ec7 53%,#e570e7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a849a3 0%,#c85ec7 53%,#e570e7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a849a3 0%,#c85ec7 53%,#e570e7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a849a3', endColorstr='#e570e7',GradientType=0 ); /* IE6-8 */
+}
+.header h3{
+	color:#ffffff;
+}
+.header p{
+	color:#E6E6E6;
+}
+.header-content{
+	padding:1%;
+}
+
+@keyframes opacity-animation{
+	0% { opacity:1;}
+	100% { opacity:0;}
+}
+.badge-container{
+	position:absolute;
+	z-index:1;
+	background: #fceabb; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZWFiYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZjY2Q0ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2Y4YjUwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmYmRmOTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fceabb), color-stop(50%,#fccd4d), color-stop(51%,#f8b500), color-stop(100%,#fbdf93)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-8 */	
+	border-radius:1.2em;
+}
+.badge-container-body{
+	padding-left:20%;
+	padding-right:20%;
+}
+.fade-animation{
+    animation: opacity-animation ease-in-out 700ms;
+    animation-iteration-count: 1;
+    transform-origin: ;
+    animation-fill-mode:forwards; /*when the spec is finished*/
+    -webkit-animation: opacity-animation ease-in-out 700ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: ;
+    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+    -moz-animation: opacity-animation ease-in-out 700ms;
+    -moz-animation-iteration-count: 1;
+    -moz-transform-origin: ;
+    -moz-animation-fill-mode:forwards; /*FF 5+*/
+    -o-animation: opacity-animation ease-in-out 700ms;
+    -o-animation-iteration-count: 1;
+    -o-transform-origin: ;
+    -o-animation-fill-mode:forwards; /*Not implemented yet*/
+    -ms-animation: opacity-animation ease-in-out 700ms;
+    -ms-animation-iteration-count: 1;
+    -ms-transform-origin: ;
+    -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+.badge-animation{
+  animation: animationFrames ease-in-out 700ms;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animationFrames ease-in-out 700ms;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: animationFrames ease-in-out 700ms;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: animationFrames ease-in-out 700ms;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: animationFrames ease-in-out 700ms;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes animationFrames{
+  0% {
+    left:0%;
+    top:20%;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:20%;
+    top:20%;
+    opacity:1;
+    transform:  rotate(-360deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    left:0%;
+    top:20%;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:20%;
+    top:20%;
+    opacity:1;
+    -moz-transform:  rotate(-360deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:-184px;
+    top:0px;
+    opacity:1;
+    -webkit-transform:  rotate(-360deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:-184px;
+    top:0px;
+    opacity:1;
+    -o-transform:  rotate(-360deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:-184px;
+    top:0px;
+    opacity:1;
+    -ms-transform:  rotate(-360deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+
+/* Fader */
+.fadein-animation{
+  animation: animationFrames ease-in-out 700ms;
+  animation-iteration-count: 1;
+  transform-origin: ;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animationFrames ease-in-out 700ms;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: ;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: animationFrames ease-in-out 700ms;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: ;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: animationFrames ease-in-out 700ms;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: ;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: animationFrames ease-in-out 700ms;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: ;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes animationFrames{
+  0% {
+    left:10%;
+    top:10%;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:10%;
+    top:10%;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    left:10%;
+    top:10%;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:10%;
+    top:10%;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    left:10%;
+    top:10%;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:10%;
+    top:10%;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    left:10%;
+    top:10%;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:10%;
+    top:10%;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    left:10%;
+    top:10%;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:10%;
+    top:10%;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}

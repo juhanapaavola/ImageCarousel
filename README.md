@@ -1,4 +1,3 @@
-ImageCarousel
-=============
+Sample of Image Carousel.
 
-ImageCarousel
+Built with Backbone boilerplate and Flexslider jQuery plugin. Purpose of this is to demonstrate use of RequireJS, Backbone, jQuery and Flexslider.
