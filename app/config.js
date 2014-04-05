@@ -13,5 +13,13 @@ require.config({
 	"templates": "templates",
 	"text" : "../vendor/bower/requirejs-text/text",
 	"flexslider":"lib/woothemes-FlexSlider-7ecc526/jquery.flexslider-min"
+  },
+  shim:{
+    'flexslider':{
+      deps:['jquery']
+    },
+    'jquery':{
+      exports:'jQuery'
+    }
   }
 });
