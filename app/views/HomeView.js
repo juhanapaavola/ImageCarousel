@@ -6,7 +6,6 @@ define(function(require){
 	Backbone = require('backbone'),
 	tpl = require('text!templates/Home.html'),
 	template = _.template(tpl);
-	var jQuery = $;
 	var flexslider = require('flexslider');
 	var Badge = require('views/InfoBadgeView');
 
